@@ -1,0 +1,13 @@
+h1
+{
+    font-family: "Verdana", serif;
+    text-decoration: underline;
+    color: brown;
+    text-align: center;
+}
+
+ul{
+    list-style-type: square;
+    font-family: "Helvetica",serif;
+}
+

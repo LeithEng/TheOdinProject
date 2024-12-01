@@ -1,0 +1,28 @@
+h1,h2
+{
+    font-family: "Verdana", serif;
+    text-decoration: underline;
+    color: brown;
+}
+h1{
+    text-align: center;
+}
+
+img{
+    display: block;     
+    margin-left: auto;    
+    margin-right: auto;
+}
+
+p, li{
+    font-family: "Arial", sans-serif;
+}
+
+ul{
+    list-style-type: square;
+}
+
+div {
+    border: 2px solid black;
+    padding: 20px; 
+}

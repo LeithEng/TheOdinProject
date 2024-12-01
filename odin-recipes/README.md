@@ -1,0 +1,1 @@
+This is the first project in the Odin Project fundamentals course, called "Recipes". It's a small project to test the HTML knowledge we acquired throughout the first part of the course, HTML fundamentals.
