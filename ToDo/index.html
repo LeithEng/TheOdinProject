@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4">
+    <div id="app" class="mx-auto max-w-2xl bg-white rounded-lg shadow-md p-6">
+        <header class="mb-8">
+            <h1 class="text-3xl font-semibold text-gray-800 text-center">My Todo App</h1>
+        </header>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section id="project-section">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Projects</h2>
+                <div id="project-list" class="mb-4 space-y-2">
+                    </div>
+                <div class="flex gap-2">
+                    <input type="text" id="project-name-input" placeholder="New Project Name" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                    <button id="create-project-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Create Project</button>
+                </div>
+            </section>
+            <section id="todo-section">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Todos</h2>
+                <div id="todo-list" class="mb-4 space-y-2">
+                    </div>
+                <div class="form-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-2">
+                    <input type="text" id="todo-title-input" placeholder="Todo Title" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                    <input type="text" id="todo-description-input" placeholder="Todo Description" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                    <input type="date" id="todo-due-date-input" placeholder="Todo Date" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                     <select id="todo-priority-input" title="Todo priority" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <button id="create-todo-btn" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline sm:col-span-2 md:col-span-1 lg:col-span-2">Create Todo</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
